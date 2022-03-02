@@ -10,6 +10,7 @@
 	<a href="../index.php" class="custom-button">Back</a>
 	<br>
 	<br>
+	
 	<form action="">
 		<label for="username">Meno: </label>
 		<input type="text" name="username" id="username">
@@ -24,7 +25,7 @@
 		<input type="password" name="password_check" id="password_check">
 		<br>
 		<input type="submit" value="Registrovať">
-		
+	</form>
 		
 </body>
 </html>
