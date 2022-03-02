@@ -52,6 +52,12 @@ require_once("./Connection.php");
 if($validated && $pwm){
 	$sql = 'INSERT INTO users(password,email,username) VALUES("'. $_POST["password"] .'","'.$_POST["email"] .'","'.$_POST["username"].'");';
 	echo "<br>".$sql;
+	$result = $conn->query($sql);
+}
+if ($conn->query($sql) === TRUE) {
+  echo "vložil";
+} else {
+  echo "ne: " . $conn->error;
 }
 
 
