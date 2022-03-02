@@ -11,8 +11,8 @@ require 'php/Connection.php';
 </head>
 <body>
 	</br>
-	<a href="php/CreateTable.php" class="custom-button">Vytvor tabuľku</a>
-	<a href="php/ListUsers.php" class="custom-button">Vypíš uživateľov</a>
+	<a href="pages/register.php" class="custom-button">Register</a>
+	<a href="pages/login.php" class="custom-button">Login</a>
 	
 	<br>
 </body>
