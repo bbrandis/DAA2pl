@@ -51,7 +51,7 @@ echo $hashed_password;
 require_once("./Connection.php");
 if($validated && $pwm){
 	$sql = 'INSERT INTO users(password,email,username) VALUES("'. $_POST["password"] .'","'.$_POST["email"] .'","'.$_POST["username"].'");';
-	echo $sql;
+	echo "<br>".$sql;
 }
 
 
