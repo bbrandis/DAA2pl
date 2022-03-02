@@ -11,7 +11,7 @@
 	<br>
 	<br>
 	
-	<form action="">
+	<form action="../php/registerscript.php" method="POST">
 		<label for="username">Meno: </label>
 		<input type="text" name="username" id="username">
 		<br>
