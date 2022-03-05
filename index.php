@@ -12,8 +12,8 @@ require 'php/Connection.php';
 <body>
 	</br>
 	<a href="pages/register.php" class="custom-button">Register</a>
-	<a href="pages/login.php" class="custom-button">Login</a>
-	
+	<a href="pages/login.php" class="custom-button">Login</a><br>
+	<h1>prihlasuvačka</h1>
 	<br>
 </body>
 </html>
