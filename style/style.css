@@ -1,6 +1,19 @@
 .custom-button{
-background-color: rgb(231, 165, 165);
-color:green;
+background-color: #484848;
+color:#ffffff;
 padding: 5px 8px;
-border: 2px solid #bada55;
+border: 2px solid #ffffff;
+font-family: Arial;
 }
+body{   
+    background: #eee;  
+    font-family: Arial;
+}  
+#frm{  
+    border: solid gray 1px;  
+    width:25%;  
+    border-radius: 2px;  
+    margin: 120px auto;  
+    background: white;  
+    padding: 50px;  
+}  

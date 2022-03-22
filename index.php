@@ -11,9 +11,10 @@ require 'php/Connection.php';
 </head>
 <body>
 	</br>
+	<center>
+	<b><h1>Vitajte!</h1></b><br>
 	<a href="pages/register.php" class="custom-button">Register</a>
-	<a href="pages/login.php" class="custom-button">Login</a><br>
-	<h1>prihlasuvačka</h1>
+	<a href="pages/login.php" class="custom-button">Login</a><br></center>
 	<br>
 </body>
 </html>

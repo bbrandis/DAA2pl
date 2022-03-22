@@ -5,7 +5,7 @@ $pwm = true;
 
 if( !empty($_POST["username"]))
 {
-	echo "Zadal si meno.<br>";
+
 }
 else
 {
@@ -15,7 +15,7 @@ else
 
 if( !empty($_POST["email"]))
 {
-	echo "Zadal si mail.<br>";
+
 }
 else
 {
@@ -25,7 +25,7 @@ else
 
 if( !empty($_POST["password"]))
 {
-	echo "Zadal si heslo.<br>";
+
 }
 else
 {
@@ -41,21 +41,19 @@ if ($_POST["password"]!=$_POST["password_check"])
 }
 else
 {
-	echo "Heslá sa zhodujú.<br>";
+
 }
 
 $hashed_password = password_hash($_POST["password"], PASSWORD_BCRYPT);
-echo "Unhashed password = " . $_POST["password"];
-echo $hashed_password;
+
 
 require_once("./Connection.php");
 if($validated && $pwm){
 	$sql = 'INSERT INTO users(password,email,username) VALUES("'. $_POST["password"] .'","'.$_POST["email"] .'","'.$_POST["username"].'");';
-	echo "<br>".$sql;
 	$result = $conn->query($sql);
 }
 if ($conn->query($sql) === TRUE) {
-  echo "vložil";
+  echo "Registrácia úspešná";
 } else {
   echo "ne: " . $conn->error;
 }
