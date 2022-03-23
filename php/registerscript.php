@@ -40,11 +40,6 @@ if ($_POST["password"]!=$_POST["password_check"])
 	$pwm = false;
 }
 else
-{
-
-}
-
-$hashed_password = password_hash($_POST["password"], PASSWORD_BCRYPT);
 
 
 require_once("./Connection.php");
