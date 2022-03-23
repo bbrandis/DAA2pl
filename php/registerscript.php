@@ -1,11 +1,10 @@
 <?php
 
-$validated = true;
-$pwm = true; 
+$validated = false;
 
 if( !empty($_POST["username"]))
 {
-
+	$validated = true;
 }
 else
 {
@@ -15,7 +14,7 @@ else
 
 if( !empty($_POST["email"]))
 {
-
+	$validated = true;
 }
 else
 {
@@ -25,7 +24,7 @@ else
 
 if( !empty($_POST["password"]))
 {
-
+	$validated = true;
 }
 else
 {
@@ -37,13 +36,11 @@ if ($_POST["password"]!=$_POST["password_check"])
 {
 	echo "Heslá sa nezhodujú.<br>";
 	$validated = false;
-	$pwm = false;
 }
+
 else
-
-
 require_once("./Connection.php");
-if($validated && $pwm){
+if($validated){
 	$sql = 'INSERT INTO users(password,email,username) VALUES("'. $_POST["password"] .'","'.$_POST["email"] .'","'.$_POST["username"].'");';
 	$result = $conn->query($sql);
 }
