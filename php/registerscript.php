@@ -38,11 +38,13 @@ if ($_POST["password"]!=$_POST["password_check"])
 	$validated = false;
 }
 
-
 else
+
+$hashed_password = md5($_POST["password"]);
+
 require_once("./Connection.php");
 if($validated){
-	$sql = 'INSERT INTO users(password,email,username) VALUES("'. $_POST["password"] .'","'.$_POST["email"] .'","'.$_POST["username"].'");';
+	$sql = 'INSERT INTO users(password,email,username) VALUES("'. $hashed_password .'","'.$_POST["email"] .'","'.$_POST["username"].'");';
 	$result = $conn->query($sql);
 }
 if ($conn->query($sql) === TRUE) {

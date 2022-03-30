@@ -7,15 +7,15 @@
         $result = mysqli_query($conn, $sql);  
     
         if ($username == "" || $password == ""){
-            echo "Nekompletné údaje";
+            header("Location: ../pages/login.php?message=Nekompletné údaje");
         }
-        else if ($result->num_rows > 0){
+        else if ($result->num_rows == 1){
             $row = mysqli_fetch_assoc($result);
             $_SESSION['email'] = $row['username'];
-            echo "Vitajte";
+            header("Location: ../index.php");
         }
         else {
-            echo "Nesprávne meno alebo heslo";
+            header("Location: ../pages/login.php?message=Nesprávne údaje");
         }
        
 ?>  

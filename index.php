@@ -1,9 +1,11 @@
-﻿	</br>
-	<div class="has-bg-img">
-	<img class="bg-img" src="/assets/backrgound.jpg" alt="...">
+﻿	<?php include('./php/header.php') ?>
+	<main class="container">
+	
+	</br>
 	<center>
-	<b><h1>Vitajte!</h1></b><br>
-	<a href="pages/register.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Registrovať</a>
-	<a href="pages/login.php" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Prihlásiť</a>
+	<b><h1>Vitajte!</h1></b><br>xw
 	</div>
 	<br>
+
+	</main>
+<?php include('./php/footer.php') ?>

@@ -19,6 +19,8 @@
 		<input type="password" name="password" id="password">
 		<br>
 		<input type="submit" value="Prihlásiť" class="custom-button">
+		
+		<p> <?php echo $error ?></p>
 	</form></center></div>
 	
 </body>
