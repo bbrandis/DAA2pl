@@ -1,3 +1,3 @@
 # DAA2pl
  
-databázovky
+databázovky spšit
