@@ -38,6 +38,7 @@ if ($_POST["password"]!=$_POST["password_check"])
 	$validated = false;
 }
 
+
 else
 require_once("./Connection.php");
 if($validated){
