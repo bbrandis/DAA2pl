@@ -9,6 +9,8 @@
         if ($result->num_rows == 1){
             session_start();
             $_SESSION['email'] = $email;
+            $_SESSION['id'] = $id;
+            $_SESSION['avatar'] = $avatar;
             header("Location: ../index.php");
         }
         else {
