@@ -32,7 +32,7 @@
 		  <a class="nav-link" href="php/logout.php">Odhlásiť</a>
 		</li> 
 	  <li class="nav-item">
-		<a class="nav-link" href="pages/profile.php">Profil</a>
+		<a class="nav-link" href="pages/profile.php?id=<?php echo $_SESSION['id'] ?>">Profil</a>
 	  </li>
 		<?php endif; ?>
 	</ul>
