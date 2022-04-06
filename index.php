@@ -15,10 +15,10 @@
 		</ol>
 		<div class="carousel-inner">
 		   <div class="carousel-item active">
-			  <img class="d-block w-100" src="https://raw.githubusercontent.com/bbrandis/DAA2pl/main/assets/backrgound.jpg" alt="First slide">
+			  <img class="d-block w-100" src="https://raw.githubusercontent.com/bbrandis/DAA2pl/main/assets/bgsmall.png" alt="First slide">
 		   </div>
 		   <div class="carousel-item">
-			  <img class="d-block w-100" src="https://raw.githubusercontent.com/bbrandis/DAA2pl/main/assets/linus.png" alt="Second slide">
+			  <img class="d-block w-100" src="https://raw.githubusercontent.com/bbrandis/DAA2pl/main/assets/linussmall.png" alt="Second slide">
 		   </div>
 		   <div class="carousel-item">
 			  <img class="d-block w-100" src="https://www.tutorialspoint.com/bootstrap/images/slide3.png" alt="Third slide">
