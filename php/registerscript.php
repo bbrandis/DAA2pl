@@ -41,6 +41,7 @@ if ($_POST["password"]!=$_POST["password_check"])
 else
 
 $hashed_password = md5($_POST["password"]);
+					md5($_POST["password_check"]);
 
 require_once("./Connection.php");
 if($validated){
@@ -52,7 +53,6 @@ if ($conn->query($sql) === TRUE) {
 } else {
   echo "ne: " . $conn->error;
 }
-
 
 ?>
 

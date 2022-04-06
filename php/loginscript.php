@@ -1,17 +1,14 @@
-<?php      
+<?php  
     require('./Connection.php');  
     $email = $_POST['email'];  
-    $password = $_POST['password'];  
+    $hashed_password = md5($_POST['password']);
       
         $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";  
-        $result = mysqli_query($conn, $sql);  
+        $result = $conn->query($sql);
     
-        if (empty($email)|| empty($password)){
-            header("Location: ../pages/login.php?message=Nekompletné údaje");
-        }
-        else if ($result->num_rows == 1){
-            $row = mysqli_fetch_assoc($result);
-            $_SESSION['email'] = $row['username'];
+        if ($result->num_rows == 1){
+            session_start();
+            $_SESSION['email'] = $email;
             header("Location: ../index.php");
         }
         else {
