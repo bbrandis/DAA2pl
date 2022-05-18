@@ -1,4 +1,10 @@
-<?php session_start() ?>
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+ session_start() ?>
+
 
 
 <!DOCTYPE html>
@@ -28,13 +34,13 @@
 			<li class="nav-item">
 				<a class="nav-link disabled">Prihlásený je <?php echo $_SESSION["email"] ?></a>
 			  </li>
-			  <img src="../assets/<?php echo $_SESSION["avatar"] ?>" alt="">
+			  <a href="pages/profile.php?id=<?php echo $_SESSION['id'] ?>"> 
+				  <img src="../assets/<?php echo $_SESSION["avatar"] ?>" width="60" 
+				   height="35" alt="">
+			  </a>
 	  <li class="nav-item">
 		  <a class="nav-link" href="php/logout.php">Odhlásiť</a>
 		</li> 
-	  <li class="nav-item">
-		<a class="nav-link" href="pages/profile.php?id=<?php echo $_SESSION["id"] ?>">Profil</a>
-	  </li>
 		<?php endif; ?>
 	</ul>
   </div>

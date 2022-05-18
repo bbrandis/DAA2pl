@@ -1,0 +1,25 @@
+body{   
+    background-image: url("../assets/backrgound.jpg");
+    font-family: Arial;
+}  
+.custom-button{
+background-color: #484848;
+color:#ffffff;
+padding: 5px 8px;
+border: 2px solid #ffffff;
+font-family: Arial;
+}
+#frm{  
+    border: solid gray 1px;  
+    width:25%;  
+    border-radius: 10px;  
+    margin: 120px auto;  
+    background: rgba(255, 255, 255, 0.75);  
+    padding: 50px;  
+}
+h1{  
+    color: white;
+}    
+input{
+    margin: 7px;
+}
